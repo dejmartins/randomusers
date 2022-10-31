@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className="more_information_container">
       <div className="user_information">
-        <p>More Information</p>
+        <p>More Information!</p>
       </div>
     </div>
   );

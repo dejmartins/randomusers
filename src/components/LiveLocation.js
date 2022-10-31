@@ -5,7 +5,7 @@ function Location() {
   return (
     <div className="more_information_container">
       <div className="user_information">
-        <p>Live location oh!</p>
+        <p>Live location!</p>
       </div>
     </div>
   );

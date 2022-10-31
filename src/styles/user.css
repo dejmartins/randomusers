@@ -19,7 +19,8 @@
   margin: auto;
   left: 150px;
   min-height: 570px;
-  /* border: 1px solid rgb(219, 219, 219); */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   width: 250px;
   background-color: white;
 }
@@ -51,4 +52,49 @@
 
 .navigation {
   padding-left: 10px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: rgb(143, 141, 141);
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.nav_link:hover {
+  color: black;
+}
+
+.navigation Link {
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.pagination .pages {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.page_item {
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+}
+
+.error_message {
+  position: absolute;
+  margin-left: 130px;
+  padding-top: 50px;
+}
+
+.error_message h1 {
+  font-size: 12px;
 }
