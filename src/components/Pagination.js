@@ -10,7 +10,7 @@ const Pagination = ({ paginate, handlePrevious, handleNext, pageNumber }) => {
 
   return (
     <div className="pagination">
-      <FocusScope>
+      <FocusScope contain autoFocus>
         <button
           className="direction"
           disabled={pageNumber === 1 ? true : false}
