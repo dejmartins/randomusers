@@ -29,6 +29,7 @@
 }
 
 .user_information {
+  position: relative;
   border: 1px solid black;
   margin-left: 32vw;
   margin-right: 150px;

@@ -1,4 +1,5 @@
 import React from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const Pagination = ({ paginate, handlePrevious, handleNext, pageNumber }) => {
   let pageNumbers = [];
@@ -9,25 +10,34 @@ const Pagination = ({ paginate, handlePrevious, handleNext, pageNumber }) => {
   return (
     <div className="pagination">
       <button
+        className="direction"
         disabled={pageNumber === 1 ? true : false}
         onClick={(event) => handlePrevious(event)}
       >
-        Previous
+        <FiChevronLeft size={20} />
       </button>
       <nav>
         <ul className="pages">
           {pageNumbers.map((number) => (
             <li key={number} className="page_item">
-              <button onClick={() => paginate(number)}>{number}</button>
+              <button
+                onClick={() => paginate(number)}
+                style={
+                  pageNumber === number ? { backgroundColor: "gainsboro" } : {}
+                }
+              >
+                {number}
+              </button>
             </li>
           ))}
         </ul>
       </nav>
       <button
+        className="direction"
         disabled={pageNumber === 10 ? true : false}
         onClick={(event) => handleNext(event)}
       >
-        Next
+        <FiChevronRight size={20} />
       </button>
     </div>
   );
